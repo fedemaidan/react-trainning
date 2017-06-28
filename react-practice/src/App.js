@@ -32,12 +32,12 @@ class App extends Component {
   }
 
   updateItem(elemento) {
-      if (this.validateItem(elemento)) {
+      
         this.setState({
           message: "",
           items: this.state.items.map(item => (item.id === elemento.id ? { ...elemento } : item))
         })
-      }
+      
   }
 
 
